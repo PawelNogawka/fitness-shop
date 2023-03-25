@@ -40,17 +40,17 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav__item">
-              <a onClick={() => setShowMainMenu(false)} className="nav__link" href="#products">
+              <a onClick={() => setShowMainMenu(false)} className="nav__link" href="/#products">
                 Products
               </a>
             </li>
             <li className="nav__item">
-              <a onClick={() => setShowMainMenu(false)} className="nav__link" href="#categories">
+              <a onClick={() => setShowMainMenu(false)} className="nav__link" href="/#categories">
                 Categories
               </a>
             </li>
             <li className="nav__item">
-              <a onClick={() => setShowMainMenu(false)} className="nav__link" href="#reviews">
+              <a onClick={() => setShowMainMenu(false)} className="nav__link" href="/#reviews">
                 Reviews
               </a>
             </li>
