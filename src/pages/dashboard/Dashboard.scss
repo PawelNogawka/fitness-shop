@@ -1,0 +1,30 @@
+.dashboard {
+  margin-top: 15rem;
+
+  &__heading {
+    font-size: min(8vw, 3.4rem);
+    font-weight: 700;
+    margin-bottom: 4rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+  }
+
+  &__order-date {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    margin-top: 11rem;
+    &__order-date {
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+    }
+  }
+}

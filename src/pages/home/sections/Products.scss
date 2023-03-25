@@ -1,0 +1,21 @@
+.products {
+  padding: 4rem 0;
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap:5rem;
+  }
+
+  &__heading {
+    font-size: min(7vw, 3rem);
+    margin-bottom: 6rem;
+  }
+}
+
+@media(max-width:768px){
+  .products{
+    &__heading {
+      margin-bottom: 4rem;
+    }
+  }
+}

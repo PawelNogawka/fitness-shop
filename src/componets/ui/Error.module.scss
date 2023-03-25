@@ -1,0 +1,31 @@
+@import "../../variables";
+
+.error--big {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  .message {
+    display: flex;
+    font-size: 1.6rem;
+    color: $error;
+  }
+}
+
+.error--small {
+  .message {
+    display: flex;
+    font-size: 1.6rem;
+    color: $error;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .error {
+    .message {
+      font-size: 3rem;
+    }
+  }
+}

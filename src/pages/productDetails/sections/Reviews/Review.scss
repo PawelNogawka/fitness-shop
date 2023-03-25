@@ -1,0 +1,71 @@
+@import "../../../../variables";
+
+.review-card {
+  flex: 1 1 40rem;
+  max-width: 50rem;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  box-shadow: $card-shadow;
+  border-radius: .5rem;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__avatar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__row {
+    display: flex;
+    gap: 0.2rem;
+    flex-direction: column;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: $dark-text;
+  }
+
+  &__created {
+    font-size: 1.4rem;
+    color: $dark-text;
+    font-weight: 500;
+  }
+
+  &__email {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: $light-text;
+  }
+
+  &__review{
+    line-height: 147%;
+    font-size:1.6rem;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding-top: 1.5rem;
+    border-top: 0.1rem solid rgba(17, 46, 63, 0.4);
+  }
+
+  &__card-link {
+    color: rgba(17, 46, 63, 0.2);
+
+    svg {
+      font-size: 2rem;
+    }
+  }
+}

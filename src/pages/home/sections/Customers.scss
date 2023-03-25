@@ -1,0 +1,121 @@
+@import "../../../variables";
+
+.customers {
+  padding: 4rem 0;
+
+  &__heading {
+    font-size: min(7vw, 3rem);
+    margin-bottom: 6rem;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 5rem;
+    align-items: center;
+  }
+
+  &__left {
+    flex: 1 1 45rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: flex-start;
+  }
+
+  &__right {
+    flex: 1 1 45rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  &__title {
+    font-size: min(6vw, 2.6rem);
+  }
+
+  &__info {
+    font-size: 1.6rem;
+    line-height: 146%;
+  }
+
+  &__card {
+    flex: 1 1 23rem;
+    padding: 2rem;
+    box-shadow: $card-shadow;
+    border-radius: 0.5rem;
+  }
+
+  &__card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  &__card-avatar {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__card-name {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    margin-bottom: 0.7rem;
+  }
+
+  &__card-rating {
+    display: flex;
+
+    svg {
+      color: $yellow;
+      font-size: 1.7rem;
+    }
+  }
+
+  &__card-review {
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    line-height: 143%;
+  }
+
+  &__card-bottom {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding-top: 1.5rem;
+    border-top: 0.1rem solid rgba(17, 46, 63, 0.4);
+  }
+
+  &__card-link {
+    color: rgba(17, 46, 63, 0.2);
+
+    svg {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .customers {
+    &__card {
+      &:nth-child(2n) {
+        margin-top: 4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .customers {
+    &__right {
+      margin-top: 2.5rem;
+    }
+    &__heading {
+      margin-bottom: 4rem;
+    }
+  }
+}

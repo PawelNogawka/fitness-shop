@@ -1,0 +1,31 @@
+@import "../../variables";
+
+.register {
+  position: relative;
+  min-height: 100vh;
+
+  &__heading {
+    font-size: min(7vw, 2.7rem);
+    margin-bottom: 1rem;
+  }
+
+  &__form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    width: 100%;
+    max-width: 70rem;
+    box-shadow: $card-shadow;
+  }
+
+  &__btns {
+    margin-top: 1.4rem;
+    display: flex;
+    gap: 2rem;
+  }
+}

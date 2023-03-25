@@ -1,0 +1,31 @@
+@import '../variables';
+
+.category{
+    display: flex;
+    flex-direction: column;
+    flex:1 1 30rem;
+    max-width: 45rem;
+    border-radius: .5rem;
+    box-shadow:$card-shadow;
+    overflow: hidden;
+
+    &__img{
+        height: 50rem;
+        width: 100%;
+        object-fit: cover;
+    }
+    &__inner{
+        padding: 2rem;
+    }
+
+    &__name{
+        font-size:2.4rem;
+        margin-bottom: 2rem;
+        text-transform: capitalize;
+    }
+
+    &__desc{
+        font-size:1.6rem;
+        line-height: 145%;
+    }
+}
