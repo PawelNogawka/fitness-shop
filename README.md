@@ -1,5 +1,7 @@
 live site: https://neon-begonia-10eede.netlify.app/
 
+A fitness shop where a user can register, add reviews, and check their purchase history. I used React and Sanity for this project.
+
 
 ![Zrzut ekranu z 2023-03-25 o 10 48 44](https://user-images.githubusercontent.com/108990517/227710244-79563a83-ea35-4c2c-96b2-a9c5b8ab117c.png)
 ![Zrzut ekranu z 2023-03-25 o 10 49 56](https://user-images.githubusercontent.com/108990517/227710247-31af261c-9b5b-4440-858c-63266b739d9b.png)
